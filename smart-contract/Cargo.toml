@@ -1,0 +1,16 @@
+[package]
+name = "counter_program"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+solana-program = "1.18.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 2
